@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" type="module"></script>
-</head>
-<body>
-  <div class="world" data-world>
-    <div class="score" data-score>0</div>
-    <div class="start-screen" data-start-screen>Press Any Key To Start</div>
-    <img src="imgs/ground.png" class="ground" data-ground>
-    <img src="imgs/ground.png" class="ground" data-ground>
-    <img src="imgs/dino-stationary.png" class="dino" data-dino>
-  </div>
-</body>
+	<head>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dino Game</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./js/script.js" type="module"></script>
+	</head>
+	<body>
+		<div class="world" data-world>
+			<div class="score">0</div>
+
+			<div class="start-screen">Press Any Key To Start</div>
+
+			<img class="ground" src="./imgs/ground.png" alt="ground" />
+			<img class="ground" src="./imgs/ground.png" alt="ground" />
+			<img class="dino" src="./imgs/dino-stationary.png" alt="dino" />
+		</div>
+	</body>
 </html>
