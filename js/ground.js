@@ -4,7 +4,7 @@ import {
 	setCustomProperty,
 } from "./updateCustomProperty.js";
 
-const SPEED = 0.05;
+const BASE_SPEED = 0.03;
 const groundEle = $("[data-ground]");
 
 export function setupGround() {
@@ -17,7 +17,7 @@ export function updateGround(delta, speedScale) {
 		incrementCustomProperty(
 			this,
 			"--left",
-			delta * speedScale * SPEED * -1
+			delta * speedScale * BASE_SPEED * -1
 		);
 
 		if (getCustomProperty(this, "--left") <= -300) {

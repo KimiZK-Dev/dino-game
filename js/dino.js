@@ -34,18 +34,18 @@ export function getDinoRect() {
 }
 
 export function setDinoLose() {
-	$dinoElem.attr("src", "imgs/dino-lose.png");
+	$dinoElem.attr("src", "./images/dino-lose.png");
 }
 
 function handleRun(delta, speedScale) {
 	if (isJumping) {
-		$dinoElem.attr("src", `imgs/dino-stationary.png`);
+		$dinoElem.attr("src", `./images/dino-stationary.png`);
 		return;
 	}
 
 	if (currentFrameTime >= FRAME_TIME) {
 		dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT;
-		$dinoElem.attr("src", `imgs/dino-run-${dinoFrame}.png`);
+		$dinoElem.attr("src", `./images/dino-run-${dinoFrame}.png`);
 		currentFrameTime -= FRAME_TIME;
 	}
 	currentFrameTime += delta * speedScale;
